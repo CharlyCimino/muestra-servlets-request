@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Servlet</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                font-family: "Arial", sans-serif;
+            }
+            
+            h1 {
+                font-size: 1.2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Prueba de formulario con Java Servlet (Método POST)</h1>
+        <form name="form1" action="/muestra-servlets-request/procesar-form" method="post" >
+            <label for="fname1">Nombre:</label> <br>
+            <input type="text" id="fname1" name="fname">
+            <br/><br/>
+            <label for="lname1">Apellido:</label> <br>
+            <input type="text" id="lname1" name="lname">
+            <br/><br/>
+            <label for="mensaje1">Tu mensaje:</label> <br>		
+            <textarea id="mensaje1" name="message" rows="5" cols="30">Un mensaje de prueba...</textarea>
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr/>
+        <h1>Prueba de formulario con Java Servlet (Método GET)</h1>
+        <form name="form1" action="/muestra-servlets-request/procesar-form" method="get" >
+            <label for="fname2">Nombre:</label> <br>
+            <input type="text" id="fname2" name="fname">
+            <br/><br/>
+            <label for="lname2">Apellido:</label> <br>
+            <input type="text" id="lname2" name="lname">
+            <br/><br/>
+            <label for="mensaje2">Tu mensaje:</label> <br>		
+            <textarea id="mensaje2" name="message" rows="5" cols="30">Un mensaje de prueba...</textarea>
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
